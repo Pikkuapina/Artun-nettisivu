@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Artun sivu
+    </title>
+    <link rel="stylesheet" href="Arttu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="Arttu.html">HOME</a></li>
+                <li><a href="Arttu-about.html">ABOUT</a></li>
+                <li><a href="Arttu-Projects.html">PROJECTS</a></li>
+                <li><a href="Arttu-contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>
+        About me
+    </h1>
+
+</section>
+
+<!-----About me content----->
+
+<section class="about-me">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>
+                Arttu Mäkelä
+            </h1>
+            <p>
+                Hi! my name is Arttu, I am a mechanical engineer from Finland who has specialized in energy technology.<br>
+                I have skills in Autocad, Catia V6 and Siemens NX. I also know the basics in programming languages such as HTML and CSS, javascript, python and c.<br>
+                I am fluent in Finnish and English in addition I am currently studying Norwegean!
+                my interests fall into categories: science, technology, physics and philosofy.
+                
+            </p>
+        </div>
+        <div class="about-col">
+            <img src="Artun-kuvat/DSC_0489.JPG">
+        </div>
+    </div>
+
+</section>
+
+<!------ETUSIVUN TEKSTI------>
+
+<section class="alapalkki">
+    <h1>
+        Don't be shy to visit this page later too!
+    </h1>
+    <p>
+        I will update this page every now and then,<br>so something new may have appeared on your next visit!
+    </p>
+
+
+
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }    
+
+</script>
+
+
+</body>
+</html>
